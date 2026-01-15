@@ -13,6 +13,7 @@
 <p align="center">
 <br>
 <a href="https://co.linkedin.com/in/samuel-barona-a3b9b0300"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
+<a href="https://www.credly.com/users/samuel-barona"><img src="https://img.shields.io/badge/credly_badge-%230077B5.svg?&style=for-the-badge&logo=&logoColor=white" alt="credly Badges" /></a>&nbsp;
 
 
 <br>
@@ -69,6 +70,10 @@
 
 
 <!-- <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=christianflor" alt="christianflor" /></a> </p>-->
+<p align="center">
+<br>
+
+
 
 
 
