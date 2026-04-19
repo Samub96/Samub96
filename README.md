@@ -16,7 +16,7 @@
 <a href="https://www.credly.com/users/samuel-barona"><img src="https://img.shields.io/badge/credly_badge-%230077B5.svg?&style=for-the-badge&logo=&logoColor=white" alt="credly Badges" /></a>&nbsp;
 </p>
 
-<table>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%;">
   <tr>
     <td valign="top" width="62%">
 
@@ -24,7 +24,7 @@
 
 <h3 align="left">Languages and Tools: <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="24" alt="tools" /> </h3>
 
-<table>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%;">
   <tr>
     <td align="center"><a href="https://www.w3.org/html/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png" alt="html5" width="34" height="34" /></a></td>
     <td align="center"><a href="https://www.w3schools.com/css/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="css3" width="34" height="34" /></a></td>
@@ -37,7 +37,7 @@
     <td align="center"><a href="https://postman.com" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="34" height="34" /></a></td>
     <td align="center"><a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="34" height="34" /></a></td>
     <td align="center"><a href="https://www.java.com" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="java" width="34" height="34" /></a></td>
-    <td align="center"><a href="https://www.python.org" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNssrmH2kRhSBEcE7GmMD7a4GU5BmnNAk_1A&usqp=CAU" alt="python" width="34" height="34" /></a></td>
+    <td align="center"><a href="https://www.python.org" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="python" width="34" height="34" /></a></td>
   </tr>
   <tr>
     <td align="center"><a href="https://mariadb.org/" target="_blank"><img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="34" height="34" /></a></td>
@@ -60,12 +60,12 @@
     <td align="center"><a href="https://developer.android.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Android_Logo_2014_-_2019.svg" alt="android" width="34" height="34" /></a></td>
     <td align="center"><a href="https://kubernetes.io/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1280px-Kubernetes_logo_without_workmark.svg.png" alt="kubernetes" width="34" height="34" /></a></td>
   </tr>
-</table>
+  </table>
 
   </td>
   <td valign="top" width="38%" align="center">
 
-<img height="240px" alt="GIF" src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" />
+<img src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" alt="GIF" width="100%" />
 
   </td>
   </tr>
@@ -74,9 +74,16 @@
 
 ### :zap: Github Stats
 
-<img align="left" src="https://github-readme-stats-eight-theta.vercel.app/api?username=samub96&show_icons=true&theme=react&include_all_commits=true&count_private=true" alt="samub96's Github Stats" width="60%">
-  
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=samub96&layout=compact&langs_count=8&theme=react" width="37%" alt="Samub96's Top Languages">
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=samub96&show_icons=true&theme=react&include_all_commits=true&count_private=true" alt="samub96's Github Stats" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=samub96&layout=compact&langs_count=8&theme=react" alt="Samub96's Top Languages" width="100%" />
+    </td>
+  </tr>
+</table>
 
 
 
