@@ -1,11 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO básico -->
+  <title>Samuel Barona — Ingeniero Telemático</title>
+  <meta name="description" content="Portafolio profesional de Samuel Barona: experiencia en IoT, redes, automatización, infraestructura cloud y gestión técnica." />
+  <meta name="keywords" content="ingeniero telemático, IoT, redes, cloud, automatización, DevOps, Python, Cisco, AWS, Kubernetes" />
+  <meta name="author" content="Samuel Barona" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Samuel Barona — Ingeniero Telemático" />
+  <meta property="og:description" content="Experiencia en IoT, redes, infraestructura cloud y automatización de procesos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samub96.github.io" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Samuel Barona — Ingeniero Telemático" />
+  <meta name="twitter:description" content="Experiencia en IoT, redes, infraestructura cloud y automatización de procesos." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <p>Hello, World!</p>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-bracket">&lt;</span>SB<span class="nav-logo-bracket">&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">Perfil</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Canvas para la animación de red -->
+    <canvas id="networkCanvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        SYSTEM.STATUS == ONLINE
+      </div>
+      <h1 class="hero-title">
+        Samuel <span class="accent">Barona</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="subtitle-icon">&#9776;</span>
+        Ingeniero Telematico | IoT, Redes y Cloud
+        <span class="cursor-blink">_</span>
+      </div>
+      <p class="hero-tagline">
+        Ingeniero Telematico con experiencia en infraestructura de redes,<br />
+        servicios TI y desarrollo de soluciones tecnologicas eficientes y escalables.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver Experiencia</a>
+        <a href="#contact" class="btn btn-ghost">Inicializar Contacto</a>
+      </div>
+      <div class="hero-scroll">
+        <span>SCROLL DOWN</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-line"></div>
+        <h2 class="section-title">/about-me</h2>
+        <div class="section-line-full"></div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p class="about-intro">
+            Ingeniero Telemático en formación con experiencia en infraestructura de
+            redes, servicios TI y desarrollo de soluciones tecnológicas.
+          </p>
+          <p>
+            He participado en implementación y configuración de servicios de red,
+            entornos virtualizados y proyectos IoT, integrando programación,
+            automatización y monitoreo para optimizar el desempeño técnico.
+          </p>
+          <p>
+            Me caracterizo por el pensamiento analítico, el liderazgo de iniciativas
+            académicas y tecnológicas, y una orientación constante al aprendizaje
+            continuo y a la construcción de soluciones escalables.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number accent">3</span>
+              <span class="stat-label">Roles recientes</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number accent">6+</span>
+              <span class="stat-label">Certificaciones</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number accent">3</span>
+              <span class="stat-label">Idiomas</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dot dot-red"></div>
+            <div class="terminal-dot dot-yellow"></div>
+            <div class="terminal-dot dot-green"></div>
+            <span class="terminal-title">samuel@dev:~$</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="t-prompt">$</span> whoami</p>
+            <p class="t-output">samuel_barona</p>
+            <p><span class="t-prompt">$</span> cat roles.txt</p>
+            <p class="t-output">IoT &amp; Robotics Lab Support</p>
+            <p class="t-output">Network &amp; Communications Monitoring</p>
+            <p class="t-output">IEEE Communications Society - Leadership</p>
+            <p><span class="t-prompt">$</span> cat location.txt</p>
+            <p class="t-output">Cali, Colombia</p>
+            <p><span class="t-prompt">$</span> echo $STATUS</p>
+            <p class="t-output t-green">Disponible para nuevos proyectos</p>
+            <p><span class="t-prompt">$</span> <span class="t-cursor">&#9608;</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROYECTOS
+  ============================================================ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-line"></div>
+        <h2 class="section-title">/experiencia-profesional</h2>
+        <div class="section-line-full"></div>
+      </div>
+      <p class="section-desc reveal">
+        Experiencia, educación y certificaciones destacadas de mi trayectoria técnica.
+      </p>
+      <div class="projects-grid">
+
+        <!-- Proyecto 1 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Laboratorio de Investigación en IoT y Robótica</h3>
+          <p class="card-desc">
+            Desarrollo de sistemas embebidos con ESP32 y control web para optimización
+            energética en proyectos de movilidad eléctrica. (Abr 2025 - May 2025)
+          </p>
+          <div class="card-tags">
+            <span class="tag">ESP32</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Control Web</span>
+            <span class="tag">Energia</span>
+            <span class="tag">Movilidad Electrica</span>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Monitor de Redes y Comunicaciones</h3>
+          <p class="card-desc">
+            Soporte en implementación de laboratorios LAN/WAN y acompañamiento técnico
+            en prácticas de switching, routing, VLAN, DHCP y GPON. (Oct 2024 - Nov 2024)
+          </p>
+          <div class="card-tags">
+            <span class="tag">LAN/WAN</span>
+            <span class="tag">Routing</span>
+            <span class="tag">Switching</span>
+            <span class="tag">VLAN</span>
+            <span class="tag">GPON</span>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Presidente - Capitulo estudiantil IEEE CS</h3>
+          <p class="card-desc">
+            Liderazgo de equipo multidisciplinario, gestión de eventos técnicos y
+            articulación con industria. (Ene 2026 - Presente)
+          </p>
+          <div class="card-tags">
+            <span class="tag">Liderazgo</span>
+            <span class="tag">Gestion</span>
+            <span class="tag">IEEE</span>
+            <span class="tag">Eventos</span>
+            <span class="tag">Comunicaciones</span>
+          </div>
+        </article>
+
+        <!-- Proyecto 4 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Educación - Universidad ICESI</h3>
+          <p class="card-desc">
+            Pregrado en Ingeniería Telemática. Formación orientada a redes,
+            sistemas distribuidos, virtualización e integración de servicios TI.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Universidad ICESI</span>
+            <span class="tag">Telematica</span>
+            <span class="tag">2022 - Presente</span>
+          </div>
+        </article>
+
+        <!-- Proyecto 5 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Certificaciones Tecnicas</h3>
+          <p class="card-desc">
+            Certificaciones en redes y cloud: CCNA Introduction to Networks,
+            CCNA Switching Routing and Wireless Essentials, CCNA DevNet,
+            AWS Cloud Architecting, AWS Cloud Foundations y AWS Data Engineering.
+          </p>
+          <div class="card-tags">
+            <span class="tag">CCNA</span>
+            <span class="tag">DevNet</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Cloud</span>
+            <span class="tag">Data Engineering</span>
+          </div>
+        </article>
+
+        <!-- Proyecto 6 -->
+        <article class="project-card reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="Demo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Cursos Complementarios</h3>
+          <p class="card-desc">
+            Formación adicional en Matlab telecomunicaciones, diseño de sistemas
+            fotovoltaicos off-grid y fundamentos de machine learning.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Matlab</span>
+            <span class="tag">Fotovoltaica</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Academia</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-line"></div>
+        <h2 class="section-title">/herramientas</h2>
+        <div class="section-line-full"></div>
+      </div>
+      <p class="section-desc reveal">
+        Tabla de herramientas con las que tengo experiencia academica y practica profesional.
+      </p>
+
+      <div class="tools-table reveal">
+        <article class="tool-col">
+          <h3 class="tool-title">Simulaciones</h3>
+          <ul class="tool-list">
+            <li>GNS3</li>
+            <li>Packet Tracer</li>
+            <li>Mininet</li>
+            <li>Multisim</li>
+          </ul>
+
+          <h3 class="tool-title">Analisis de datos</h3>
+          <ul class="tool-list">
+            <li>Google Analytics</li>
+            <li>Google Colab</li>
+            <li>RStudio</li>
+            <li>Excel</li>
+          </ul>
+
+          <h3 class="tool-title">Diseno grafico</h3>
+          <ul class="tool-list">
+            <li>Canva</li>
+            <li>Figma</li>
+            <li>PowerPoint</li>
+            <li>Power BI</li>
+            <li>Draw.io</li>
+          </ul>
+        </article>
+
+        <article class="tool-col">
+          <h3 class="tool-title">Lenguajes de programacion</h3>
+          <ul class="tool-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>Ruby</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+          </ul>
+
+          <h3 class="tool-title">Gestion de proyectos</h3>
+          <ul class="tool-list">
+            <li>GitHub Projects</li>
+            <li>Jira</li>
+            <li>SCRUM</li>
+          </ul>
+
+          <h3 class="tool-title">Frameworks</h3>
+          <ul class="tool-list">
+            <li>Spring Boot</li>
+          </ul>
+
+          <h3 class="tool-title">Cloud</h3>
+          <ul class="tool-list">
+            <li>AWS</li>
+            <li>Google Cloud Platform</li>
+          </ul>
+        </article>
+
+        <article class="tool-col">
+          <h3 class="tool-title">Virtualizacion</h3>
+          <ul class="tool-list">
+            <li>VirtualBox</li>
+            <li>VMware</li>
+            <li>Docker</li>
+          </ul>
+
+          <h3 class="tool-title">DevOps</h3>
+          <ul class="tool-list">
+            <li>GitHub Actions</li>
+            <li>Ansible</li>
+            <li>Kubernetes</li>
+            <li>Grafana</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+  ============================================================ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <div class="contact-badge">
+          <span class="badge-dot"></span>
+          OPEN FOR CONNECTIONS
+        </div>
+        <h2 class="contact-title">
+          Listo para construir soluciones tecnologicas?
+        </h2>
+        <p class="contact-desc">
+          Si necesitas apoyo en redes, automatizacion, cloud o proyectos IoT,
+          podemos conversar y construir una solucion juntos.
+        </p>
+        <a href="mailto:samuel.barona@u.icesi.edu.co" class="btn btn-primary btn-large">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          samuel.barona@u.icesi.edu.co
+        </a>
+        <div class="social-links">
+          <a href="https://github.com/samub96" target="_blank" rel="noreferrer" class="social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>GitHub</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-arrow"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a href="https://co.linkedin.com/in/samuel-barona-a3b9b0300" target="_blank" rel="noreferrer" class="social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-arrow"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a href="https://www.credly.com/users/samuel-barona" target="_blank" rel="noreferrer" class="social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 4.86L20 7.64l-4 3.9.95 5.53L12 14.77 7.05 17.07 8 11.54l-4-3.9 5.6-.78L12 2z"/></svg>
+            <span>Credly</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="link-arrow"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo">
+          <span class="nav-logo-bracket">&lt;</span>SB<span class="nav-logo-bracket">&gt;</span>
+        </a>
+        <p class="footer-copy">
+          &copy; 2026 Samuel Barona. Construido con HTML, CSS &amp; JS puro.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/samub96" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://co.linkedin.com/in/samuel-barona-a3b9b0300" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.credly.com/users/samuel-barona" target="_blank" rel="noreferrer">Credly</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="js/main.js"></script>
 </body>
 </html>
